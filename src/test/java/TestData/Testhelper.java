@@ -23,8 +23,8 @@ public class Testhelper extends BaseClass{
 				break;
 			}
 		}
-		String brandname=checkout.getBrandName();
-		String price=checkout.getPriceTag().replaceAll("[^0-9]", "");
+//		String brandname=checkout.getBrandName();
+//		String price=checkout.getPriceTag().replaceAll("[^0-9]", "");
 		
 	}
 

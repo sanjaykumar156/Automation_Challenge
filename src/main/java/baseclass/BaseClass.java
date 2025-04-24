@@ -18,7 +18,6 @@ public class BaseClass {
 	    @Parameters({"browser"})
 	    @BeforeClass
 	    public void setup(String browser) throws IOException {
-	        // If the driver is null, initialize the WebDriver for the current thread
 	        if (driver.get() == null) {
 	            WebDriver localDriver = null;
 	            if (browser.equals("chrome")) {
@@ -37,14 +36,14 @@ public class BaseClass {
 	        }
 	    }
 
-	    // Getter method for WebDriver instance
+	   
 	    public static WebDriver getDriver() {
 	        return driver.get();
 	    }
 
 	    @AfterClass
 	    public void teardown() {
-	        // Quit the driver after the test completes
+	        
 	        if (driver.get() != null) {
 	            driver.get().quit();
 	        }

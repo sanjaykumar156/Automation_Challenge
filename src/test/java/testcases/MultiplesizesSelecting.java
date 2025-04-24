@@ -1,8 +1,5 @@
 package testcases;
 
-import java.util.Set;
-
-import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -11,25 +8,28 @@ import baseclass.BaseClass;
 import pages.CheckoutPage;
 import pages.HomePage;
 
-public class OrderplaceTest extends BaseClass {
-	
+public class MultiplesizesSelecting extends BaseClass {
 	@Test
-	public void test1() throws InterruptedException {
+	public void selectmultiplesize() {
 		HomePage hp= new HomePage(getDriver());
 		CheckoutPage checkout=new CheckoutPage(getDriver());
 		Testhelper helper= new Testhelper();
 		helper.commonordersteps(checkout, hp);
 		
+		//selecting multiple sizes
 		String brandname=checkout.getBrandName();
-		String price=checkout.getPriceTag().replaceAll("[^0-9]", "");
 		checkout.selectSize();
 		Assert.assertTrue(checkout.isSizeVisible());
 		checkout.addToCart();
+		checkout.mselectsize();
+		Assert.assertTrue(checkout.ismsizevisibile());
+		checkout.addToCart();
 		checkout.goToCart();
 		String checkbrandname = checkout.getCheckoutBrandName();
-		String checkpricetag=checkout.getCheckoutPrice().replaceAll("[^0-9]", "");
 		Assert.assertEquals(brandname, checkbrandname);
-		Assert.assertEquals(price, checkpricetag);
+		Assert.assertTrue(checkout.verifysmallsize());
+		Assert.assertTrue(checkout.verifymediumsize());
+		Assert.assertEquals(checkout.verifymrp(),"₹1,618");
 		checkout.clickPlaceOrder();
 		
 	}

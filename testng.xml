@@ -4,10 +4,23 @@
 	<listeners>
 		<listener class-name="utilities.ExtentReportClass"/>
 	</listeners>
-	<parameter name="browser" value="chrome"></parameter>
-  <test thread-count="5" parallel="tests" name="Test">
+	
+  <test name="Testase1">
+	  <parameter name="browser" value="firefox"></parameter>
 	  <classes>
-      <class name="testcases.OrderplaceTest"/>
+		<class name="testcases.MultiplesizesSelecting"/>
     </classes>
-  </test> <!-- Test -->
+  </test> <!-- Test -->5
+  <test name="Testcasse2">
+	  <parameter name="browser" value="edge"></parameter>
+	  <classes>
+		<class name="testcases.Multiplequantity"/>
+    </classes>
+  </test>
+  <test name="Testcase3">
+	  <parameter name="browser" value="chrome"></parameter>
+	  <classes>
+		 <class name="testcases.Multipleproductselection"/>
+    </classes>
+  </test>
 </suite> <!-- Suite -->  

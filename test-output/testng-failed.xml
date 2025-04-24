@@ -1,19 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <parameter name="browser" value="chrome"/>
   <listeners>
     <listener class-name="utilities.ExtentReportClass"/>
   </listeners>
-  <test thread-count="5" parallel="tests" name="Test(failed)">
+  <test thread-count="5" parallel="tests" name="Testcasse2(failed)">
+    <parameter name="browser" value="edge"/>
     <classes>
-      <class name="testcases.OrderplaceTest">
+      <class name="testcases.Multiplequantity">
         <methods>
-          <include name="test1"/>
+          <include name="selectmultipleqnty"/>
           <include name="teardown"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- testcases.OrderplaceTest -->
+      </class> <!-- testcases.Multiplequantity -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Testcasse2(failed) -->
+  <test thread-count="5" parallel="tests" name="Testcase3(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testcases.Multipleproductselection">
+        <methods>
+          <include name="multipleproducts"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testcases.Multipleproductselection -->
+    </classes>
+  </test> <!-- Testcase3(failed) -->
+  <test thread-count="5" parallel="tests" name="Testase1(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="testcases.MultiplesizesSelecting">
+        <methods>
+          <include name="selectmultiplesize"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testcases.MultiplesizesSelecting -->
+    </classes>
+  </test> <!-- Testase1(failed) -->
 </suite> <!-- Failed suite [Suite] -->

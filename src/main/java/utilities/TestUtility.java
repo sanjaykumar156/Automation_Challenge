@@ -15,7 +15,7 @@ public class TestUtility extends BaseClass {
 	public String capturescreenshot(String testname) throws IOException {
 		try {
 	String TimeStamp=new SimpleDateFormat("yyyy-MM-dd_HH.mm.ss").format(new Date());
-	File source=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+	File source=((TakesScreenshot)getDriver()).getScreenshotAs(OutputType.FILE);
 	File destination= new File(".//screenshots//" + testname + "_" + TimeStamp + ".png");
 	FileUtils.copyFile(source, destination);
 	System.out.println("screenshot saved: " + destination.getAbsolutePath());

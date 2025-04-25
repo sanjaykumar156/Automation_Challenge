@@ -8,7 +8,7 @@ import pages.HomePage;
 
 public class Testhelper extends BaseClass{
 	
-	public void commonordersteps(CheckoutPage checkout,HomePage hp ) {
+	public void commonordersteps(HomePage hp ) {
 		
 		hp.hoveronmen();
 		hp.clickTshirt();
@@ -23,8 +23,7 @@ public class Testhelper extends BaseClass{
 				break;
 			}
 		}
-//		String brandname=checkout.getBrandName();
-//		String price=checkout.getPriceTag().replaceAll("[^0-9]", "");
+		
 		
 	}
 

@@ -18,7 +18,7 @@ public class OrderplaceTest extends BaseClass {
 		HomePage hp= new HomePage(getDriver());
 		CheckoutPage checkout=new CheckoutPage(getDriver());
 		Testhelper helper= new Testhelper();
-		helper.commonordersteps(checkout, hp);
+		helper.commonordersteps(hp);
 		
 		String brandname=checkout.getBrandName();
 		String price=checkout.getPriceTag().replaceAll("[^0-9]", "");

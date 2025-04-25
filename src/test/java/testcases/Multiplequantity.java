@@ -15,7 +15,7 @@ public class Multiplequantity extends BaseClass{
 		HomePage hp= new HomePage(getDriver());
 		CheckoutPage checkout=new CheckoutPage(getDriver());
 		Testhelper helper= new Testhelper();
-		helper.commonordersteps(checkout, hp);
+		helper.commonordersteps(hp);
 		
 		//selecting multiple sizes
 		String brandname=checkout.getBrandName();

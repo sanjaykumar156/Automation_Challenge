@@ -7,9 +7,9 @@
 	<parameter name="browser" value="chrome"></parameter>
   <test thread-count="5" name="Test">
     <classes>
-      <!--class name="testcases.Multipleproductselection"/-->
+      <class name="testcases.Multipleproductselection"/>
       <!--class name="testcases.MultiplesizesSelecting"/-->
-      <class name="testcases.Multiplequantity"/>
+      <!--class name="testcases.Multiplequantity"/-->
       <!--class name="testcases.OrderplaceTest"/-->
     </classes>
   </test> <!-- Test -->

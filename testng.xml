@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite parallel="tests" name="Suite">
+
 	<listeners>
 		<listener class-name="utilities.ExtentReportClass"/>
 	</listeners>
@@ -10,7 +11,7 @@
 	  <classes>
 		<class name="testcases.MultiplesizesSelecting"/>
     </classes>
-  </test> <!-- Test -->5
+  </test>
   <test name="Testcasse2">
 	  <parameter name="browser" value="edge"></parameter>
 	  <classes>

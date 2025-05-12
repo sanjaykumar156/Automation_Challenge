@@ -10,13 +10,13 @@ import baseclass.BaseClass;
 import pages.CheckoutPage;
 import pages.HomePage;
 public class Multipleproductselection extends BaseClass {
-	@Test
+	@Test(retryAnalyzer = utilities.RetryAnalyser.class)
 	public void multipleproducts() {
 		HomePage hp= new HomePage(getDriver());
 		CheckoutPage checkout=new CheckoutPage(getDriver());
 		Testhelper helper= new Testhelper();
 		helper.commonordersteps(hp);
-		
+
 		//selecting multiple products
 		String brandname=checkout.getBrandName();
 		checkout.selectSize();

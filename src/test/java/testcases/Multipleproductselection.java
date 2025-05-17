@@ -10,14 +10,15 @@ import baseclass.BaseClass;
 import pages.CheckoutPage;
 import pages.HomePage;
 public class Multipleproductselection extends BaseClass {
-	@Test(retryAnalyzer = utilities.RetryAnalyser.class)
+	@Test(description="selecting multipleproducts",groups= {"sanity"})
 	public void multipleproducts() {
 		HomePage hp= new HomePage(getDriver());
 		CheckoutPage checkout=new CheckoutPage(getDriver());
 		Testhelper helper= new Testhelper();
 		helper.commonordersteps(hp);
-
+		
 		//selecting multiple products
+		logger.info("--Multipleproductselection testcase has started--");
 		String brandname=checkout.getBrandName();
 		checkout.selectSize();
 		Assert.assertTrue(checkout.isSizeVisible());
@@ -28,7 +29,6 @@ public class Multipleproductselection extends BaseClass {
 		checkout.goToCart();
 		String checkbrandname = checkout.getCheckoutBrandName();
 		Assert.assertEquals(brandname, checkbrandname);
-		
 		//adding the amount and validating with actual and expected
 		List<String> priceList = checkout.getAllCheckoutPrice();  // store the prices(799) in a variable
 		int totalProductPrice = 0;

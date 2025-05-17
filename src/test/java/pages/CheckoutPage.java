@@ -34,7 +34,7 @@ public class CheckoutPage extends BasePage{
 	private By totalprice=By.xpath("//div[text()='1,598']");
 	private By finalprice=By.xpath("//span[text()='1,618']");
 	private By shippingfee=By.xpath("//span[text()='20']");
-		
+	private By selectsize= By.xpath("//p[text()='40']");
 	
 	public boolean verifysmallsize() {
 		return validdation(verifySsize);
@@ -104,5 +104,8 @@ public class CheckoutPage extends BasePage{
     }
     public String finalprice() {
     	return gettext(finalprice);
+    }
+    public void selectsize() {
+    	click(selectsize);
     }
     }

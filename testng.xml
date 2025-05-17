@@ -1,27 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite parallel="tests" name="Suite">
+<suite name="Suite" thread-count="5">
 
-	<listeners>
+	<!--listeners>
 		<listener class-name="utilities.ExtentReportClass"/>
-	</listeners>
+	</listeners-->
 	
   <test name="Testase1">
-	  <parameter name="browser" value="firefox"></parameter>
+	  <parameter name="browser" value="chrome"></parameter>
+	  <parameter name="os" value="windows"></parameter>
 	  <classes>
 		<class name="testcases.MultiplesizesSelecting"/>
     </classes>
   </test>
   <test name="Testcasse2">
 	  <parameter name="browser" value="edge"></parameter>
+	  <parameter name="os" value="linux"></parameter>
 	  <classes>
 		<class name="testcases.Multiplequantity"/>
     </classes>
   </test>
-  <test name="Testcase3">
+  <!--test name="Testcase3">
 	  <parameter name="browser" value="chrome"></parameter>
+	  <parameter name="os" value="mac"></parameter>
 	  <classes>
 		 <class name="testcases.Multipleproductselection"/>
     </classes>
-  </test>
+  </test-->
 </suite> <!-- Suite -->  

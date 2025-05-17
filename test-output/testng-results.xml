@@ -2,31 +2,36 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-02T10:38:59 IST" name="Suite" finished-at="2025-05-02T10:39:45 IST" duration-ms="46056">
+  <suite started-at="2025-05-17T14:13:23 IST" name="Suite" finished-at="2025-05-17T14:14:04 IST" duration-ms="41069">
     <groups>
     </groups>
-    <test started-at="2025-05-02T10:38:59 IST" name="Test" finished-at="2025-05-02T10:39:45 IST" duration-ms="46056">
-      <class name="testcases.Multiplequantity">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.Multiplequantity@6fd83fc1]" started-at="2025-05-02T10:38:59 IST" name="setup" finished-at="2025-05-02T10:39:13 IST" duration-ms="13897" status="PASS">
+    <test started-at="2025-05-17T14:13:23 IST" name="Test" finished-at="2025-05-17T14:14:04 IST" duration-ms="41069">
+      <class name="testcases.PagenationTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testcases.PagenationTest@306e95ec]" started-at="2025-05-17T14:13:23 IST" name="setup" finished-at="2025-05-17T14:13:36 IST" duration-ms="12542" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[chrome]]>
               </value>
             </param>
+            <param index="1">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="selectmultipleqnty()[pri:0, instance:testcases.Multiplequantity@6fd83fc1]" started-at="2025-05-02T10:39:13 IST" name="selectmultipleqnty" finished-at="2025-05-02T10:39:43 IST" duration-ms="30209" status="PASS">
+        <test-method signature="pagenation()[pri:0, instance:testcases.PagenationTest@306e95ec]" started-at="2025-05-17T14:13:36 IST" name="pagenation" finished-at="2025-05-17T14:14:02 IST" duration-ms="26666" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- selectmultipleqnty -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.Multiplequantity@6fd83fc1]" started-at="2025-05-02T10:39:44 IST" name="teardown" finished-at="2025-05-02T10:39:45 IST" duration-ms="1272" status="PASS">
+        </test-method> <!-- pagenation -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.PagenationTest@306e95ec]" started-at="2025-05-17T14:14:02 IST" name="teardown" finished-at="2025-05-17T14:14:04 IST" duration-ms="1753" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- testcases.Multiplequantity -->
+      </class> <!-- testcases.PagenationTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

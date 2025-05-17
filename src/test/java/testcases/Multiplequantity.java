@@ -10,7 +10,7 @@ import pages.HomePage;
 
 public class Multiplequantity extends BaseClass{
 	
-	@Test
+	@Test(description="selecting Multiplequantity ",groups= {"sanity"})
 	public void selectmultipleqnty() {
 		HomePage hp= new HomePage(getDriver());
 		CheckoutPage checkout=new CheckoutPage(getDriver());

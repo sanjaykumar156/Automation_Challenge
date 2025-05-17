@@ -9,7 +9,7 @@ import pages.CheckoutPage;
 import pages.HomePage;
 
 public class MultiplesizesSelecting extends BaseClass {
-	@Test
+	@Test(description="selecting MultiplesizesSelecting ",groups= {"sanity"})
 	public void selectmultiplesize() {
 		HomePage hp= new HomePage(getDriver());
 		CheckoutPage checkout=new CheckoutPage(getDriver());

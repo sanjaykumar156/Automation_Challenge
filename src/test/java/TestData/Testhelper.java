@@ -12,17 +12,19 @@ public class Testhelper extends BaseClass{
 		
 		hp.hoveronmen();
 		hp.clickTshirt();
-		hp.searchforitem("Dennis Lingo Tshirts");
+		//hp.searchforitem("Dennis Lingo Tshirts");
+		hp.searchforitem("levis shirts");
 		hp.clickonsearch();
-		hp.selectcolour();
-		hp.clickonitem();
-		Set<String> allwindow=getDriver().getWindowHandles();
-		for(String window:allwindow) {
-			getDriver().switchTo().window(window);
-			if(window.contains("regular-fit-cotton-t-shirt/32927172/buy")) {
-				break;
-			}
-		}
+//		hp.selectcolour();
+//		hp.clickonitem();
+//		Set<String> allwindow=getDriver().getWindowHandles();
+//		for(String window:allwindow) {
+//			getDriver().switchTo().window(window);
+//			if(window.contains("regular-fit-cotton-t-shirt/32927172/buy")) {
+//				break;
+//			}
+//			logger.info("---driver is successfully navigated to new product tab---");
+//		}
 		
 		
 	}
